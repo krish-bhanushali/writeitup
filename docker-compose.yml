@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  cs-notes:
+    build: .
+    ports:
+      - 8000:8000
+    volumes:
+      - ./notes-empty.db:/src/db/notes.db
+
